@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.932);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #D32F2F;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    margin-bottom: 10rem;
+    border-radius: 0 0 8px 8px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);
+    position: relative;
+}
+
+.shopping-cart {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    font-size: 40px; 
+    color: whitesmoke; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
+
+
+.shopping-cart:hover {
+    transform: scale(1.2); 
+}
+
+
+.navicon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.navicon span {
+    display: block;
+    height: 4px;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.navicon:hover {
+    transform: scale(1.5); 
+}
+
+
+.navicon:hover span {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 10rem;
+}
+
+.headerimg {
+    width: 300px;
+    height: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 11rem);
+    grid-gap: 2rem;
+}
+
+main :nth-child(1) {
+    grid-area: 1/1/2/3;
+    max-width: 100%;
+    height: auto;
+}
+
+main :nth-child(2) {
+        grid-area: 1/3/2/5;
+        max-width: 100%;
+        height: auto;
+}
+
+main :nth-child(3) {
+        grid-area: 1/5/2/7;
+        max-width: 100%;
+        height: auto;
+}
+
+main :nth-child(4) {
+    grid-area: 2/1/3/3;
+    max-width: 100%;
+    height: auto;
+}
+
+main :nth-child(5) {
+    grid-area: 2/3/3/5;
+    max-width: 100%;
+    height: auto;
+}
+
+main :nth-child(6) {
+    grid-area: 2/5/3/7;
+    max-width: 100%;
+    height: auto;
+}
+
+main :nth-child(7) {
+    grid-area: 3/1/4/3;
+    max-width: 100%;
+    height: auto;
+}
+
+main :nth-child(8) {
+    grid-area: 3/3/4/5;
+    max-width: 100%;
+    height: auto;
+}
+
+main :nth-child(9) {
+    grid-area: 3/5/4/7;
+    max-width: 100%;
+    height: auto;
+}
+
+main :nth-child(10) {
+    grid-area: 4/1/5/4;
+    background-color: whitesmoke;
+    
+    h2 {
+        color: black;
+        text-shadow: 0 0 8px rgb(255, 255, 255), 0 0 15px rgb(68, 68, 68);
+    }
+
+    p {
+        color: black;
+    
+    }
+
+}
+
+main :nth-child(11) {
+    grid-area: 4/4/5/7;
+    background-color: whitesmoke;
+
+    h2 {
+        color: black;
+        text-shadow: 0 0 8px rgb(255, 255, 255), 0 0 15px rgb(68, 68, 68);
+    }
+
+    p {
+        color: black;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+p {
+    text-align: start;
+    font-size: 1rem;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.item {
+    border: solid rgb(255, 0, 0) 2px;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+button {
+    background-color: firebrick;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.4rem;
+    width: 10rem;
+    color: white;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1); 
+    background-color: red;
+}
+
+footer {
+    background-color: rgb(70, 70, 70);
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-align: start;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 10px;
+}
